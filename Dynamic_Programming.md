@@ -53,3 +53,32 @@
 ### Turn the solution around
 * Maybe flip it around and get a bottom-up solution instead. Write a function that will iteratively compute the results of successive subproblems, until our desired result is reached. 
 *
+
+## Examples
+### Fibonacci Numbers
+* First solution (Recursive & Brute Force) 
+```python
+  def fib(n): 
+    if n == 0: 
+      return 0
+    if n == 1: 
+      return 1
+    return fib(n-1) + fib(n-2)
+```
+* Analysis
+ * Terrible runtime O(2^n)
+ * Have a bunch of duplicated functions calls 
+* Find the Subproblems
+```python
+  def fib(n): 
+    if (n < 2): 
+      return n
+    cache = [-1 for i in range(n+1)] 
+    cache[0] = 0
+    cache[1] = 1
+    return fib_helper(n, cache)
+  def fib_helper(n, cache): 
+    if (cache[n] >= 0) return cache[n]
+    cache[n] = fib_helper(n-1, cache) + fib_helper(n-2, cache) 
+    return cache[n]
+```
