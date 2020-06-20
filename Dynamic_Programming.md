@@ -26,3 +26,30 @@
   **Top-down**: Starts with the final results and recursively breaks it down into subproblems. **Recursive**
   **bottom-up**: Iteratively solve the subproblems first and then works up to the desired solution. **Iterative** 
   * Both methods are equally valid. 
+
+## FAST Method
+* **F**irst Soluton
+* **A**nalyze the first solution
+* Identify the **S**ubproblems
+* **T**urn the solution around
+
+### First Solution 
+* Find the **brute force and recursive** solution 
+* Solve the problem without concern for efficiency 
+* Must meet these restrictions
+ * The recursive calls must be **self-contained**, no global variables. 
+ * Cannot do tail recursion. Solution should compute the results of each subproblems and then combine them afterwards 
+ * Do not pass in unnecessary variables. 
+ 
+### Analyze the First Solution
+* Determine the time and space complexity and ask whether there is obvious room for improvement. 
+* Ask if the problem fits the rules in DP
+ * Does it have an optimal substructure? 
+ * Are there overlapping subproblems? 
+ 
+### Find the Subproblems
+* Discover the high-level meaning of the subproblems. Our recursive solution can be made dynamic by caching the values, this is a top-down solution. 
+
+### Turn the solution around
+* Maybe flip it around and get a bottom-up solution instead. Write a function that will iteratively compute the results of successive subproblems, until our desired result is reached. 
+*
