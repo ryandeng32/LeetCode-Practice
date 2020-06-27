@@ -81,3 +81,59 @@ def smallestSubarrayGiveSum(arr, targetSum):
 inner while loop process each element once, so it's O(n + n) -> O(n)
 O(1) space'''
 ```
+
+- What consists the initial window
+- When do we shrink?
+- What to do after shrinking?
+- How to analysis time complexity:
+
+  - O(N \* (complexity of the most expensive operation done in the iteration )
+
+  We start with a window [Start,End] with Start = 0 and End = 0 initially.Now in those while loops we essentially either shrink or expand the window.Shrink from the left end by increasing the Start pointerAnd expand from the right end by increasing the End pointer.
+
+  The crucial thing to note is that after each iteration of we reach a new window state and we continue this until the window reaches the end.It is also clear that the Start and End pointers only increase. Which means that Start will go from 0 to N and End will go from 0 to N.The combination of [Start, End] hence can produce only O(N) unique windows.
+
+  Hence the total complexity would be linear that is O(N).
+
+  Pro tip: We can write a formula :Time is : O ( N \* ( complexity of the most expensive operation done in the iteration) )
+
+  Here you are using hashmap which has O(1) time for put and get hence complexity is O ( N \* 1 ) => O ( N ).
+
+  - so if we use hashmap, it will be O (N \* 1) = O(N)
+
+  Longest substring with K Distinct Characters (medium)
+
+  ```python
+  def length_of_longest_substring(str1, k):
+    window_start, max_length, max_repeat_letter_count = 0, 0, 0
+    frequency_map = {}
+
+    # Try to extend the range [window_start, window_end]
+    for window_end in range(len(str1)):
+      right_char = str1[window_end]
+      if right_char not in frequency_map:
+        frequency_map[right_char] = 0
+      frequency_map[right_char] += 1
+      max_repeat_letter_count = max(
+        max_repeat_letter_count, frequency_map[right_char])
+
+      # Current window size is from window_start to window_end, overall we have a letter which is
+      # repeating 'max_repeat_letter_count' times, this means we can have a window which has one letter
+      # repeating 'max_repeat_letter_count' times and the remaining letters we should replace.
+      # if the remaining letters are more than 'k', it is the time to shrink the window as we
+      # are not allowed to replace more than 'k' letters
+      if (window_end - window_start + 1 - max_repeat_letter_count) > k:
+        left_char = str1[window_start]
+        frequency_map[left_char] -= 1
+        window_start += 1
+
+      max_length = max(max_length, window_end - window_start + 1)
+    return max_length
+
+  def main():
+    print(length_of_longest_substring("aabccbb", 2))
+    print(length_of_longest_substring("abbcb", 1))
+    print(length_of_longest_substring("abccde", 1))
+
+  main()
+  ```
