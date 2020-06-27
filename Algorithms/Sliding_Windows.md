@@ -137,3 +137,11 @@ O(1) space'''
 
   main()
   ```
+
+  [Intuitive explanation of why O(N) sliding window does not work if negative numbers are allowed? - LeetCode Discuss](https://leetcode.com/problems/minimum-size-subarray-sum/discuss/209740/intuitive-explanation-of-why-on-sliding-window-does-not-work-if-negative-numbers-are-allowed)
+
+  [Subarray Sum Equals K - LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/solution/)
+
+  No-repeat Substring (Hard)
+
+  longest substring with the same letters after replacement
