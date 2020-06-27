@@ -145,3 +145,5 @@ O(1) space'''
   No-repeat Substring (Hard)
 
   longest substring with the same letters after replacement
+
+  Sliding_window is a form of 2 pointers method
