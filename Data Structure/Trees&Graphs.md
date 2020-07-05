@@ -74,3 +74,40 @@ def postOrderTraversal(node):
 
 # the root is always the first node visited
 ```
+
+## Graphs
+
+---
+
+- A tree is a type of graph, a tree is a **connected graph without cycles**
+
+**2 common ways to represent a graph:** adjacency list & adjacency matrices
+
+```python
+**# Adjacency List**
+# Most common way to represent a graph, each vertex (node) stores a list of adjacent nodes
+class Graph:
+# Graph class is used because, unlike in a tree, you can't necessarily reach all the nodes from a single node
+	def __init__(self, nodes = None):
+		self.nodes = nodes # a list of adjacent nodes
+class Node:
+	def __init__(self, name = None, children = None):
+		self.name = name
+		self.children = children
+```
+
+**Adjacent Matrices (explore later)**
+
+## Graph Search
+
+---
+
+2 most common ways to search a graph: **depth-first search & breadth-first search**
+
+[Depth-First Search (DFS) ](https://www.notion.so/Depth-First-Search-DFS-9d10947c1f234f9e9affc1f39262014b)
+
+## Extra
+
+---
+
+- **Binary Heaps & Tries**
