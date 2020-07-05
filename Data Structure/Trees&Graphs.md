@@ -104,8 +104,6 @@ class Node:
 
 2 most common ways to search a graph: **depth-first search & breadth-first search**
 
-[Depth-First Search (DFS) ](https://www.notion.so/Depth-First-Search-DFS-9d10947c1f234f9e9affc1f39262014b)
-
 ## Extra
 
 ---
