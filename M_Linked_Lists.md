@@ -1,5 +1,6 @@
 ## Techniques 
 > Dummy node 
+> Stack, Recursion 
 
 ## 206. Reverse Linked List
 
@@ -15,3 +16,10 @@
   # operation...
   return dummyHead.next
 ```
+## 445. Add Two Numbers II 
+
+* **technique**: when two linked lists are different length, can we fill the shorter one until they are the same length? 
+* How can we traverse a singly linked list backward without reversing it? We can either do 
+  * Recursion
+  * Use stack (stack.pop() will remove the last element) 
+  
