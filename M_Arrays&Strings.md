@@ -38,3 +38,16 @@ Solution:
 * Since python has immutable strings, one has to first **convert string into mutable data structure**
 * Trim trailing and leading spaces with **two pointers** technique. **Think about using this when there is a need to approach both side of a list** 
 * **Reverse the entire string, and then reverse each word** 
+
+## 8. String to Integer (atoi) 
+
+* **Technique**: 
+1. discard leading spaces
+```Python
+  while (i < len(str) and str[i] == " "): 
+    i += 1
+```
+2. Turn "8" into 8"
+```Python 
+  "8" - "0"
+```
