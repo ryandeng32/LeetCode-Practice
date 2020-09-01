@@ -1,9 +1,16 @@
 ## All Techniques
-> Two pointers 
+> Two pointers （in-place) 
 
 > Reverse with two pointers 
 
 > Double reverse 
+
+## Question Type
+> 2 Sum 
+
+> Reverse
+
+> Palindrome 
 
 ## 344. Reverse String ***** This method can be used for any array reverse ***** 
 
@@ -22,6 +29,7 @@ Solution:
 
 ## 151. Reverse Words in a String 
 **Question**: To use or not use built-in methods like **reverse()** 
+
 **Answer**: There is no universal answer, so be prepared to do both 
 
 **Approach 1**: Use built-in methods split and reverse. **It's in-place, but linear space complexity**
