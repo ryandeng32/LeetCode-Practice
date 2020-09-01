@@ -51,3 +51,8 @@ Solution:
 ```Python 
   "8" - "0"
 ```
+
+## 54. Spiral Matrix
+
+* Sometimes the best way to solve a problem is to come up with an algorithm for simulation. 
+* Have dx, dy, etc. and change them based on question and boundaries
