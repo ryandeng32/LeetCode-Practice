@@ -56,3 +56,11 @@ Solution:
 
 * Sometimes the best way to solve a problem is to come up with an algorithm for simulation. 
 * Have dx, dy, etc. and change them based on question and boundaries
+
+## 5. Longest Palindromic Substring 
+
+* Start by thinking the brute force solution
+* There are two cases for palindrome: **even** and **odd** 
+  * When the length is odd, the middle character can be unique 
+* **technique to find longest palindrome in array 1**: assume each element is the center of a palindrome and find the longest palindrome it can make by expanding  
+* **Quick way to validate time complexity** If you substitute in n, and the time complexity is less than 1 million, it's probably fine. since n is 1000 in this problem, then the time complexity we are aiming for would be at least O(n^2) 
