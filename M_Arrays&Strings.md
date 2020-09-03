@@ -64,3 +64,8 @@ Solution:
   * When the length is odd, the middle character can be unique 
 * **technique to find longest palindrome in array 1**: assume each element is the center of a palindrome and find the longest palindrome it can make by expanding  
 * **Quick way to validate time complexity** If you substitute in n, and the time complexity is less than 1 million, it's probably fine. since n is 1000 in this problem, then the time complexity we are aiming for would be at least O(n^2) 
+
+## 20. Valid Parentheses 
+
+* This problem has a recursive nature to it, because a valid parentheses's inside should also be a valid parenthesis
+* Therefore, we could use the **stack** to represent this **recursive structure of the problem** 
