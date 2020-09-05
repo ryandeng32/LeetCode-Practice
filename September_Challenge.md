@@ -13,3 +13,5 @@
 * **Buckets and BST** are great when we want to keep a sorted array whenever we insert something 
 
 ## Day5: 1305. All Element in Two Binary Search Trees 
+
+* Binary Search Tree & Ascending -> **Think about in-order traversal** 
