@@ -11,3 +11,5 @@
 * **Technique** By inserting element in a **self-balancing BST**, it's sorted for fast search 
 * **Technique**: Use **bucket** to achieve linear time complexity. This is also a great way to maintain a sliding window that's easy to search 
 * **Buckets and BST** are great when we want to keep a sorted array whenever we insert something 
+
+## Day5: 1305. All Element in Two Binary Search Trees 
