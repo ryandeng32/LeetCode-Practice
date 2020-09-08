@@ -15,3 +15,7 @@
 ## Day5: 1305. All Element in Two Binary Search Trees 
 
 * Binary Search Tree & Ascending -> **Think about in-order traversal** 
+
+## Day7: 290. Word Pattern 
+
+* To have O(1) look up time, we can use a hashmap or a hashset
