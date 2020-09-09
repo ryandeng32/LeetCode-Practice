@@ -19,3 +19,8 @@
 ## Day7: 290. Word Pattern 
 
 * To have O(1) look up time, we can use a hashmap or a hashset
+
+## Day8: 1022: Sum of Root to Leaf Binary Numbers 
+
+* Root-to-leaf traversal -> DFS preorder traversal 
+* We can do preorder traversal: **iteratively** and **recursively**
