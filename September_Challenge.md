@@ -24,3 +24,8 @@
 
 * Root-to-leaf traversal -> DFS preorder traversal 
 * We can do preorder traversal: **iteratively** and **recursively**
+
+## Day9: 165. Compare Version Numbers
+
+* When the input string is separated with a special character, in this case `.`, then we can use **split and parse** method 
+* Add 0s to the end so both arrays are at the same length 
