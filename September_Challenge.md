@@ -29,3 +29,7 @@
 
 * When the input string is separated with a special character, in this case `.`, then we can use **split and parse** method 
 * Add 0s to the end so both arrays are at the same length 
+
+## Day 11: 152. Maximum Product Subarray
+
+* Since it's a subarray problem, I might think about using **sliding window** first. However, since there exists negative number, the value of the window is unstable, so consider using **dynamic programming** 
