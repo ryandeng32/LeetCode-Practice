@@ -33,3 +33,9 @@
 ## Day 11: 152. Maximum Product Subarray
 
 * Since it's a subarray problem, I might think about using **sliding window** first. However, since there exists negative number, the value of the window is unstable, so consider using **dynamic programming** 
+
+## Week 2 Premium: 346. Moving Average from Data Stream 
+
+* Using a list to keep track of all the numbers is an obvious solution
+* However, since we only need to pop the start and append the end, we can use the **double-ended queue** 
+* Think about optimized DS. 
