@@ -39,3 +39,8 @@
 * Using a list to keep track of all the numbers is an obvious solution
 * However, since we only need to pop the start and append the end, we can use the **double-ended queue** 
 * Think about optimized DS. 
+
+## Day 14: 198. House Robber 
+
+* classic DP problem
+* It's hard to think about all the cases, so start simple and work on the simplest case first 
