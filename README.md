@@ -8,3 +8,5 @@ Weaknesses:
 > Backtracking 
 
 > merge intervals
+
+> Bit-wise operators 
