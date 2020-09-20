@@ -44,3 +44,7 @@
 
 * classic DP problem
 * It's hard to think about all the cases, so start simple and work on the simplest case first 
+
+## Day 19: Sequential numbers
+
+* Sliding window technique fits this problem well 
