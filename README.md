@@ -3,7 +3,7 @@ A list of interesting problems I solved with solution and takeaways
 Weaknesses: 
 > Tree & Graph
 
-> DP
+> DP (Determine when to use DP & how to come up with recursive intuition) 
 
 > Backtracking 
 
